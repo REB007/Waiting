@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import 'typeface-lato/index.css';
+
 
 class SimplePage extends Component {
   render() {
     return (
-      <div style={{ backgroundColor: 'black', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
-        <h1 style={{ color: '#FF0505', fontWeight: 'bold', fontSize: '5.5em', marginTop: '10px', marginBottom: '0px' }}>KIDNAP</h1>
-        <p style={{ color: 'white', fontSize: '2em', marginTop: '0px', marginBottom: '100px' }}>Enjoy having your precious NFTs stolen!</p>
-        <Link to='/game' style={{ textDecoration: 'none' }}>
+      <div style={{ backgroundColor: 'black', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', fontFamily: 'Lato' }}>
+        <h1 style={{ color: '#FF0505', fontWeight: 'bold', fontSize: '5.5em', marginTop: '10px', marginBottom: '0px', textAlign: 'center'}}>KIDNAP</h1>
+        <p style={{ color: 'white', fontSize: '2em', marginTop: '0px', marginBottom: '100px', textAlign: 'center' }}>Enjoy having your precious NFTs stolen!</p>
+        <Link to='https://instagram.com/_kidn.app' style={{ textDecoration: 'none' }}>
           <div style={{ backgroundColor: '#FF0505', color: 'white', fontSize:'1.5em', padding: '10px 30px', borderRadius: '10px', fontWeight: '500', marginTop: '40px' }}>START KIDNAPPING SOON</div>
         </Link>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '40px' }}>
